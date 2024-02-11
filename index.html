@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Converte Já!!</title>
+</head>
+
+<body>
+    <img src="./assets/logo.gif" alt="gif-logo" class="money">
+
+    <main>
+        <label>
+            Coverter <b>de</b>
+            <select>
+                <option>R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label>
+            Coverter <b>para</b>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro </option>
+            </select>
+        </label>
+
+        <label>
+            Valor
+            <input type="number" class="input-currency" placeholder="R$50,000.00">
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section>
+            <div class="currency-box">
+                <img src="./assets/real.png" alt="logo-brasil">
+                <p class="currency">Real</p>
+                <p class="currency-value1">R$ 0,00</p>
+            </div>
+
+            <img class="arrow-img" src="./assets/arrow.png" alt="arrow">
+
+            <div class="currency-box">
+                <img class="currency-img" src="./assets/dolar.png" alt="logo-eua">
+                <p class="currency" id="currency-name">Dólar</p>
+                <p class="currency-value">US$ 0,00</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./scripts.js"></script>
+
+</html>
